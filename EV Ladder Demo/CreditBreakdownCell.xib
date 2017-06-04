@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="86" id="pZm-iG-HKu" customClass="CreditBreakdownCell" customModule="EV_Ladder_Demo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="86"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pZm-iG-HKu" id="2nU-dg-xE8">
+                <rect key="frame" x="0.0" y="0.0" width="376" height="85.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view alpha="0.14999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9uU-Vc-rNZ">
+                        <rect key="frame" x="0.0" y="0.0" width="376" height="81.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oQQ-Kl-vmI">
+                        <rect key="frame" x="0.0" y="0.0" width="376" height="15"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CREDIT BREAKDOWN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDF-5r-ZTO">
+                                <rect key="frame" x="10" y="0.0" width="356" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LDF-5r-ZTO" firstAttribute="width" secondItem="oQQ-Kl-vmI" secondAttribute="width" constant="-20" id="0a7-so-xQ3"/>
+                            <constraint firstItem="LDF-5r-ZTO" firstAttribute="centerY" secondItem="oQQ-Kl-vmI" secondAttribute="centerY" id="SLf-tc-9Kl"/>
+                            <constraint firstItem="LDF-5r-ZTO" firstAttribute="height" secondItem="oQQ-Kl-vmI" secondAttribute="height" id="aFU-6g-f1h"/>
+                            <constraint firstItem="LDF-5r-ZTO" firstAttribute="centerX" secondItem="oQQ-Kl-vmI" secondAttribute="centerX" id="ku3-T5-PxX"/>
+                            <constraint firstAttribute="height" constant="15" id="ppf-TN-BD1"/>
+                        </constraints>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="xXZ-No-0h4">
+                        <rect key="frame" x="0.0" y="19" width="376" height="59"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wNq-LB-2La" customClass="CreditCircleView" customModule="EV_Ladder_Demo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="73.5" height="59"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1x8-QC-Xjg" customClass="CreditCircleView" customModule="EV_Ladder_Demo" customModuleProvider="target">
+                                <rect key="frame" x="75.5" y="0.0" width="73.5" height="59"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6n5-1K-e2j" customClass="CreditCircleView" customModule="EV_Ladder_Demo" customModuleProvider="target">
+                                <rect key="frame" x="151" y="0.0" width="74" height="59"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jSb-kd-QWg" customClass="CreditCircleView" customModule="EV_Ladder_Demo" customModuleProvider="target">
+                                <rect key="frame" x="227" y="0.0" width="73.5" height="59"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mgt-Q2-3Xl" customClass="CreditCircleView" customModule="EV_Ladder_Demo" customModuleProvider="target">
+                                <rect key="frame" x="302.5" y="0.0" width="73.5" height="59"/>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="oQQ-Kl-vmI" firstAttribute="centerX" secondItem="2nU-dg-xE8" secondAttribute="centerX" id="0HY-Ot-h1c"/>
+                    <constraint firstAttribute="bottom" secondItem="9uU-Vc-rNZ" secondAttribute="bottom" constant="4" id="1xz-L0-wk4"/>
+                    <constraint firstItem="9uU-Vc-rNZ" firstAttribute="centerX" secondItem="2nU-dg-xE8" secondAttribute="centerX" id="Azf-Rm-UEf"/>
+                    <constraint firstItem="xXZ-No-0h4" firstAttribute="centerX" secondItem="2nU-dg-xE8" secondAttribute="centerX" id="Gy1-CG-fsC"/>
+                    <constraint firstItem="oQQ-Kl-vmI" firstAttribute="width" secondItem="2nU-dg-xE8" secondAttribute="width" id="IGs-y5-2sn"/>
+                    <constraint firstItem="xXZ-No-0h4" firstAttribute="top" secondItem="oQQ-Kl-vmI" secondAttribute="bottom" constant="4" id="PYb-aD-u2e"/>
+                    <constraint firstItem="9uU-Vc-rNZ" firstAttribute="top" secondItem="2nU-dg-xE8" secondAttribute="top" id="RZb-8p-Aie"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="xXZ-No-0h4" secondAttribute="bottom" constant="-0.5" id="RbO-hi-0ik"/>
+                    <constraint firstItem="oQQ-Kl-vmI" firstAttribute="top" secondItem="2nU-dg-xE8" secondAttribute="top" id="Xn3-TK-BGf"/>
+                    <constraint firstItem="9uU-Vc-rNZ" firstAttribute="width" secondItem="2nU-dg-xE8" secondAttribute="width" id="crU-33-TN5"/>
+                    <constraint firstItem="xXZ-No-0h4" firstAttribute="width" secondItem="2nU-dg-xE8" secondAttribute="width" id="qjK-fJ-Ztr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="AAAView" destination="wNq-LB-2La" id="Lnt-6z-P5o"/>
+                <outlet property="AAView" destination="1x8-QC-Xjg" id="bNl-eH-eyU"/>
+                <outlet property="AView" destination="6n5-1K-e2j" id="RYb-1G-iK6"/>
+                <outlet property="BBBView" destination="jSb-kd-QWg" id="IeF-Oo-RNs"/>
+                <outlet property="belowBBBView" destination="Mgt-Q2-3Xl" id="phJ-T8-UgN"/>
+            </connections>
+            <point key="canvasLocation" x="-361" y="38"/>
+        </tableViewCell>
+    </objects>
+</document>

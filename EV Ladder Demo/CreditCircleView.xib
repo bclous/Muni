@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreditCircleView" customModule="EV_Ladder_Demo" customModuleProvider="target">
+            <connections>
+                <outlet property="circleDiameter" destination="UoE-pJ-cz7" id="7t5-M5-1bh"/>
+                <outlet property="circleView" destination="V30-5S-efR" id="Owr-aS-cWC"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="15Q-UD-Uxo"/>
+                <outlet property="percentLabel" destination="bUm-bl-k6L" id="tNP-dg-Tjz"/>
+                <outlet property="ratingLabel" destination="Yw1-nA-HDo" id="yGd-ly-yeb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="284" height="311"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V30-5S-efR">
+                    <rect key="frame" x="136" y="149.5" width="12" height="12"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="UoE-pJ-cz7"/>
+                        <constraint firstAttribute="width" secondItem="V30-5S-efR" secondAttribute="height" multiplier="1:1" id="g1D-me-eAd"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yw1-nA-HDo">
+                    <rect key="frame" x="0.0" y="3" width="284" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUm-bl-k6L">
+                    <rect key="frame" x="129.5" y="296" width="26.5" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="bUm-bl-k6L" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0Vu-tB-VX8"/>
+                <constraint firstItem="Yw1-nA-HDo" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="6PJ-nD-9TZ"/>
+                <constraint firstItem="Yw1-nA-HDo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="3" id="WFG-gg-Ktp"/>
+                <constraint firstItem="V30-5S-efR" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="dPe-Q9-vTT"/>
+                <constraint firstItem="V30-5S-efR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ehw-4S-ilX"/>
+                <constraint firstAttribute="bottom" secondItem="bUm-bl-k6L" secondAttribute="bottom" constant="3" id="k4w-bD-UT7"/>
+                <constraint firstItem="Yw1-nA-HDo" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wos-x6-6fn"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-20" y="-125.5"/>
+        </view>
+    </objects>
+</document>
